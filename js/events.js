@@ -2,8 +2,8 @@ export function Events({ route, control, navLinks }) {
 
    navLinks.forEach(element => {
       element.addEventListener("click", () => {
-         const { pathname } = window.location;
          route.route();
+         const { pathname } = window.location;
          control.changePage(pathname);
          control.selectNav(element);
       });

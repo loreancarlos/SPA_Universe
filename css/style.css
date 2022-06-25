@@ -50,10 +50,8 @@ header {
    display: flex;
    align-items: center;
    gap: 3.3rem;
-}
 
-header img {
-   padding: 4.0rem 0 4.0rem 7.2rem;
+   padding: 4.0rem 7.2rem;
 }
 
 header ul {
@@ -131,7 +129,7 @@ main .universe, main .exploration {
    flex-direction: column;
    gap: 1.6rem;
 
-   margin: 6.3rem 0 0 10.3rem;
+   margin: 6.3rem 10.3rem 0;
    max-width: 64.8rem;
 }
 
@@ -140,4 +138,41 @@ main p {
    font-size: 1.8rem;
    line-height: 160%;
 
+}
+
+@media (max-width:768px) {
+   :root {
+      font-size: 55%;
+   }
+
+   header {
+      margin: auto;
+   }
+
+   main div {
+      text-align: justify;
+   }
+
+   main div h1{
+   text-align: center;
+   }
+
+   main .universe, main .exploration{
+      margin: 6.3rem 5rem 0;
+   }
+}
+
+@media (max-width:530px) {
+   header {
+      flex-direction: column;
+      padding: 4.0rem 5rem;
+   }
+
+   
+}
+
+@media (max-width:410px) {
+   header ul {
+      flex-direction: column;
+   }
 }
