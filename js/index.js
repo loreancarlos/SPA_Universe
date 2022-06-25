@@ -1,8 +1,10 @@
 import { Router } from "./router.js"
 import { Controls } from "./controls.js";
-import { body } from "./elements.js";
+import { Events } from "./events.js";
+import { body, buttonLogo, navLinkHome, navLinkUniverse, navLinkExploration } from "./elements.js";
 
 const control = new Controls({ body });
+const event = new Events({ buttonLogo, navLinkHome, navLinkUniverse, navLinkExploration });
 
 const route = new Router(control);
 route.add("/", "../pages/home.html");

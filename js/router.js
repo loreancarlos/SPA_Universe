@@ -11,9 +11,10 @@ export class Router {
    }
 
    route(event) {
-      event = event || window.event;
-      event.preventDefault();
-      window.history.pushState({}, "", event.target.href);
+      this.event = event || window.event;
+      console.log(this.event);
+      this.event.preventDefault();
+      window.history.pushState({}, "", this.event.target.href);
       this.handle();
    }
 
