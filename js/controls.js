@@ -1,6 +1,5 @@
-export function Controls({ body }) {
-   function changeBG(pathname) {
-      console.log(pathname);
+export function Controls({ body, navLinks }) {
+   function changePage(pathname) {
       switch (pathname) {
          case "/": {
             body.dataset.page = "home";
@@ -17,5 +16,20 @@ export function Controls({ body }) {
       }
    }
 
-   return { changeBG };
+   function selectNav(element) {
+      cleanNav();
+      if (element.firstElementChild == null) {
+         element.classList.add("selected");
+      } else {
+         navLinks.item(1).classList.add("selected");
+      }
+   }
+
+   function cleanNav() {
+      navLinks.forEach(element => {
+         element.classList.remove("selected");
+      });
+   }
+
+   return { changePage, selectNav };
 }

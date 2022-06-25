@@ -1,5 +1,4 @@
 const body = document.querySelector("body");
-const buttonLogo = document.querySelector("a");
-const navLinks = document.querySelector("a");;
+const navLinks = document.querySelectorAll("header a");
 
-export { body, buttonLogo, navLinks };
+export { body, navLinks };

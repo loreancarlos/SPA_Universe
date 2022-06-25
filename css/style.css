@@ -69,9 +69,18 @@ header ul li a {
    color: var(--color-tagAOut);
 }
 
+header ul li a.selected {
+   font-weight: 700;
+   color: var(--color-tagAOver);
+}
+
 header ul li a:hover {
    font-weight: 700;
    color: var(--color-tagAOver);
+}
+
+header img, header a {
+   cursor: pointer;
 }
 
 main {
