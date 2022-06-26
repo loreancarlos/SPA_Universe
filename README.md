@@ -15,7 +15,7 @@ Este projeto é o resultado do conhecimento adquirido no programa Explorer, até
 
 ### Páginas
 
-Projeto Git - [Projeto](https://loreancarlos.github.io/SPA_Universe/)
+Projeto Git - [Projeto](https://spauniverse.vercel.app/)
 
 ### O Desafio
 
